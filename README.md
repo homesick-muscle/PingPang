@@ -1,4 +1,4 @@
-# Team Workspace
+# PingPang
 
 用于团队统一管理代码、文档和协作约定的仓库。
 
@@ -28,8 +28,30 @@ pip install -e .
 python -m team_workspace
 ```
 
-## Git 初始化后建议
+## 团队成员第一次使用
 
-1. 在远程平台创建仓库。
-2. 绑定远程地址：`git remote add origin <your-repo-url>`
-3. 首次推送：`git push -u origin main`
+```powershell
+cd F:\
+git clone https://github.com/homesick-muscle/PingPang.git
+cd PingPang
+py -3.10 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -e .
+python -m team_workspace
+```
+
+## 每次开始工作
+
+```powershell
+cd F:\PingPang
+.\.venv\Scripts\Activate.ps1
+git pull
+pip install -e .
+```
+
+## 协作约定
+
+- 文档放在 `docs/`
+- 代码放在 `src/team_workspace/`
+- 不要提交 `.venv/`
