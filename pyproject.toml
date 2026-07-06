@@ -10,5 +10,8 @@ readme = "README.md"
 requires-python = ">=3.10,<3.11"
 dependencies = []
 
+[project.scripts]
+team-workspace = "team_workspace.__main__:main"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/team_workspace"]

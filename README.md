@@ -19,6 +19,13 @@
 py -3.10 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
+pip install -e .
+```
+
+安装完成后可直接运行：
+
+```powershell
+python -m team_workspace
 ```
 
 ## Git 初始化后建议
